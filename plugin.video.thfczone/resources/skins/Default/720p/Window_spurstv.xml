@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="false">2000</defaultcontrol>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<controls>
+		<control type="image">
+			<description>Background Image</description>
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>scale</aspectratio>
+			<texture>background.png</texture>
+		</control>
+		<control type="group" id="1000">
+			<description>filter control group</description>
+			<left>5</left>
+			<top>5</top>
+			<control type="group">
+				<description>hashtagfilter</description>
+				<left>0</left>
+				<top>0</top>
+				<control type="image">
+					<width>100</width>
+					<height>30</height>
+					<visible>!Control.HasFocus(1001)</visible>
+					<texture>rc-button-focus.png</texture>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>30</height>
+					<visible>Control.HasFocus(1001)</visible>
+					<texture colordiffuse="FF85764D">rc-button-focus.png</texture>
+				</control>
+				<control type="label">
+					<description>content filter label</description>
+					<left>2</left>
+					<top>2</top>
+					<width>96</width>
+					<height>26</height>
+					<font>font10</font>
+					<textcolor>FF000033</textcolor>
+					<label>Filter</label>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="wraplist" id="1001">
+					<description>content filter</description>
+					<left>100</left>
+					<width>200</width>
+					<orientation>vertical</orientation>
+					<!-- <pagecontrol>25</pagecontrol> -->
+					<focusposition>0</focusposition>
+					<onright>2000</onright>
+					<itemlayout width="200" height="30">
+						<control type="label">
+							<left>2</left>
+							<top>2</top>
+							<width>196</width>
+							<height>26</height>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>Control.HasFocus(1001)</visible>
+						</control>
+					</itemlayout>
+					<focusedlayout width="200" height="30">
+						<control type="image">
+							<width>200</width>
+							<height>30</height>
+							<texture>rc-button-focus.png</texture>
+						</control>
+						<control type="label">
+							<left>2</left>
+							<top>2</top>
+							<width>196</width>
+							<height>26</height>
+							<font>font10</font>
+							<textcolor>FF000033</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+		</control>
+		<control type="list" id="2000">
+			<left>640</left>
+			<top>75</top>
+			<width>635</width>
+			<height>570</height>
+			<orientation>vertical</orientation>
+			<onleft>1001</onleft>
+			<itemlayout width="635" height="30">
+				<control type="image">
+					<top>2</top>
+					<width>635</width>
+					<height>26</height>
+					<texture>rc-button-nofocus.png</texture>
+				</control>
+				<control type="label">
+					<description>release date</description>
+					<left>2</left>
+					<width>120</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<description>title</description>
+					<left>122</left>
+					<width>512</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout  width="635" height="30">
+				<control type="image">
+					<top>2</top>
+					<width>635</width>
+					<height>26</height>
+					<texture colordiffuse="FF85764D">rc-button-focus.png</texture>
+				</control>
+				<control type="label">
+					<description>release date</description>
+					<left>2</left>
+					<width>120</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<description>title</description>
+					<left>122</left>
+					<width>512</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="image" id="2001">
+			<visible>!Control.HasFocus(1001)</visible>
+			<left>5</left>
+			<top>222</top>
+			<width>630</width>
+			<height>420</height>
+			<aspectratio aligny="bottom">keep</aspectratio>
+			<texture>$INFO[ListItem.Art(poster)]</texture>
+		</control>
+	</controls>
+</window>

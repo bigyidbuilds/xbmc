@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="false">0</defaultcontrol>
+	<menucontrol>0</menucontrol>
+	<backgroundcolor>0</backgroundcolor>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<width>100%</width>
+			<height>100%</height>
+			<texture>background.png</texture>
+		</control>
+		<control type="group">
+			<animation effect="fade" end="80" condition="!Control.HasFocus(2000)"  reversible="false">Conditional</animation>
+			<left>5</left>
+			<top>5</top>
+			<control type="wraplist" id="2000">
+				<width>160</width>
+				<height>720</height>
+				<onright>3000</onright>
+				<onup></onup>
+				<ondown></ondown>
+				<scrolltime tween="quadratic" easing="out">300</scrolltime>
+				<focusposition>1</focusposition>
+				<orientation>vertical</orientation>
+				<itemlayout height="160" width="160">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>150</width>
+						<height>150</height>
+						<texture>$INFO[ListItem.icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout  height="160" width="160">
+					<control type="image">
+						<animation effect="slide" end="200,0" time="200" condition="true" reversible="false">Conditional</animation>
+						<animation effect="fade" start="0" end="100" time="400" delay="200" condition="true" reversible="false">Conditional</animation>
+						<animation effect="zoom" end="110" center="auto" condition="true" delay="200" time="200" reversible="false">Conditional</animation>
+						<left></left>
+						<top></top>
+						<width>160</width>
+						<height>210</height>
+						<texture colordiffuse="FF85764D">rc-button-focus.png</texture>
+					</control>
+					<control type="image">
+						<animation effect="slide" end="200,0" time="200" condition="true" reversible="false">Conditional</animation>
+						<animation effect="zoom" end="110" center="auto" condition="true" delay="200" time="200" reversible="false">Conditional</animation>
+						<left>5</left>
+						<top>5</top>
+						<width>150</width>
+						<height>150</height>
+						<texture>$INFO[ListItem.icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<animation effect="slide" end="200,0" time="200" condition="true" reversible="false">Conditional</animation>
+						<animation effect="fade" start="0" end="100" time="400" delay="200" condition="true" reversible="false">Conditional</animation>
+						<animation effect="zoom" end="110" center="auto" condition="true" delay="200" time="200" reversible="false">Conditional</animation>
+						<left>5</left>
+						<top>155</top>
+						<width>140</width>
+						<height>40</height>
+						<textcolor>FF0f204b</textcolor>
+						<wrapmultiline>true</wrapmultiline>
+						<label>$INFO[LIstItem.Label]</label>
+						<font>font10</font>
+						<scroll>true</scroll>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+		<control type="group">
+			<left>170</left>
+			<top>470</top>
+			<control type="image">
+				<width>1090</width>
+				<height>240</height>
+				<texture colordiffuse="FF85764D" border="10">rc-button-focus.png</texture>
+			</control>
+			<control type="image">
+				<width>240</width>
+				<height>240</height>
+				<texture colordiffuse="FF85764D" >rc-button-focus.png</texture>
+			</control>
+			<control type="image">
+				<left>850</left>
+				<width>240</width>
+				<height>240</height>
+				<texture colordiffuse="FF85764D" >rc-button-focus.png</texture>
+			</control>
+			<control type="label">
+				<left>5</left>
+				<top>5</top>
+				<width>1080</width>
+				<height>40</height>
+				<font>font10</font>
+				<textcolor>FF000033</textcolor>
+				<scroll>true</scroll>
+				<label>$INFO[Container(2000).ListItem.plot]</label>
+				<aligny>center</aligny>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>50</top>
+				<width>1080</width>
+				<height>180</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Container(2000).ListItem(0).Art(banner)]</texture>
+			</control>
+		</control>
+		<control type="list" id="3000">
+			<animation effect="fade" end="80" condition="!Control.HasFocus(3000)"  reversible="false">Conditional</animation>
+			<left>750</left>
+			<top>100</top>
+			<width>500</width>
+			<height>600</height>
+			<onleft>2000</onleft>
+			<onright></onright>
+			<onup></onup>
+			<ondown></ondown>
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<orientation>vertical</orientation>
+			<itemlayout height="55" width="400">
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>500</width>
+					<height>45</height>
+					<font>font60</font>
+					<aligny>center</aligny>
+					<textcolor>FF000033</textcolor>
+					<shadowcolor>white</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="55" width="400">
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>500</width>
+					<height>45</height>
+					<font>font60</font>
+					<aligny>center</aligny>
+					<align>right</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>FF000033</shadowcolor>
+					<label>[B]$INFO[ListItem.label][/B]</label>
+				</control>
+			</focusedlayout>
+		</control>
+	</controls>
+</window>
+
+	<!--color name="spursblue">FF0f204b</color>
+	<color name="spurssilver">FFacadb0</color>
+	<color name="spurshlblue">FF3db7e4</color>
+	<color name="spursdarkblue">FF000033</color>
+	<color name="pyellow">FFffff66</color>
+	<color name="thfcgold">FF85764D</color-->

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="false">2000</defaultcontrol>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<controls>
+		<control type="image">
+			<description>Background Image</description>
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>scale</aspectratio>
+			<texture>background.png</texture>
+		</control>
+		<control type="group" id="1000">
+			<description>filter control group</description>
+			<left>5</left>
+			<top>5</top>
+			<control type="group">
+				<description>seasonfilter</description>
+				<left>0</left>
+				<top>0</top>
+				<control type="image">
+					<width>100</width>
+					<height>30</height>
+					<visible>!Control.HasFocus(1001)</visible>
+					<texture>rc-button-focus.png</texture>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>30</height>
+					<visible>Control.HasFocus(1001)</visible>
+					<texture colordiffuse="FF85764D">rc-button-focus.png</texture>
+				</control>
+				<control type="label">
+					<description>season filter label</description>
+					<left>2</left>
+					<top>2</top>
+					<width>96</width>
+					<height>26</height>
+					<font>font10</font>
+					<textcolor>FF000033</textcolor>
+					<label>Season</label>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="wraplist" id="1001">
+					<description>season filter</description>
+					<left>100</left>
+					<width>100</width>
+					<orientation>vertical</orientation>
+					<!-- <pagecontrol>25</pagecontrol> -->
+					<focusposition>0</focusposition>
+					<onright>1002</onright>
+					<itemlayout width="100" height="30">
+						<control type="label">
+							<left>2</left>
+							<top>2</top>
+							<width>96</width>
+							<height>26</height>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>Control.HasFocus(1001)</visible>
+						</control>
+					</itemlayout>
+					<focusedlayout width="100" height="30">
+						<control type="image">
+							<width>100</width>
+							<height>30</height>
+							<texture>rc-button-focus.png</texture>
+						</control>
+						<control type="label">
+							<left>2</left>
+							<top>2</top>
+							<width>96</width>
+							<height>26</height>
+							<font>font10</font>
+							<textcolor>FF000033</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+			<control type="group">
+				<description>compfilter</description>
+				<left>200</left>
+				<top>0</top>
+				<control type="image">
+					<width>100</width>
+					<height>30</height>
+					<visible>!Control.HasFocus(1002)</visible>
+					<texture>rc-button-focus.png</texture>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>30</height>
+					<visible>Control.HasFocus(1002)</visible>
+					<texture colordiffuse="FF85764D">rc-button-focus.png</texture>
+				</control>
+				<control type="label">
+					<description>comp filter label</description>
+					<left>2</left>
+					<top>2</top>
+					<width>96</width>
+					<height>26</height>
+					<font>font10</font>
+					<textcolor>FF000033</textcolor>
+					<label>Comp</label>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="wraplist" id="1002">
+					<description>comp filter</description>
+					<left>100</left>
+					<width>200</width>
+					<orientation>vertical</orientation>
+					<!-- <pagecontrol>25</pagecontrol> -->
+					<focusposition>0</focusposition>
+					<onleft>1001</onleft>
+					<onright>1003</onright>
+					<itemlayout width="200" height="30">
+						<control type="label">
+							<left>2</left>
+							<top>2</top>
+							<width>196</width>
+							<height>26</height>
+							<font>font10</font>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>Control.HasFocus(1002)</visible>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="200" height="30">
+						<control type="image">
+							<width>200</width>
+							<height>30</height>
+							<texture>rc-button-focus.png</texture>
+						</control>
+						<control type="label">
+							<left>2</left>
+							<top>2</top>
+							<width>196</width>
+							<height>26</height>
+							<font>font10</font>
+							<textcolor>FF000033</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+			<control type="button" id="1003">
+				<left>500</left>
+				<width>100</width>
+				<height>30</height>
+				<texturefocus colordiffuse="FF85764D">rc-button-focus.png</texturefocus>
+				<texturenofocus>rc-button-focus.png</texturenofocus>
+				<label>Search</label>
+				<font>font10</font>
+				<textcolor>FF000033</textcolor>
+				<focusedcolor>FF000033</focusedcolor>
+				<aligny>center</aligny>
+				<align>center</align>
+				<onleft>1002</onleft>
+				<onright>2000</onright>
+			</control>
+		</control>
+		<control type="list" id="2000">
+			<left>640</left>
+			<top>75</top>
+			<width>635</width>
+			<height>570</height>
+			<orientation>vertical</orientation>
+			<onleft>1003</onleft>
+			<itemlayout width="635" height="30">
+				<control type="image">
+					<top>2</top>
+					<width>635</width>
+					<height>26</height>
+					<texture>rc-button-nofocus.png</texture>
+				</control>
+				<control type="label">
+					<description>match date</description>
+					<left>2</left>
+					<width>100</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<description>home team</description>
+					<left>102</left>
+					<width>200</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Property(hometeam)]</label>
+				</control>
+				<control type="label">
+					<left>304</left>
+					<width>26</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>v</label>
+				</control>
+				<control type="label">
+					<description>awayteam</description>
+					<left>332</left>
+					<width>200</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Property(awayteam)]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout  width="635" height="30">
+				<control type="image">
+					<top>2</top>
+					<width>635</width>
+					<height>26</height>
+					<texture colordiffuse="FF85764D">rc-button-focus.png</texture>
+				</control>
+				<control type="label">
+					<description>match date</description>
+					<left>2</left>
+					<width>100</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<description>home team</description>
+					<left>102</left>
+					<width>200</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Property(hometeam)]</label>
+				</control>
+				<control type="label">
+					<left>304</left>
+					<width>26</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>v</label>
+				</control>
+				<control type="label">
+					<description>awayteam</description>
+					<left>332</left>
+					<width>200</width>
+					<height>26</height>
+					<font>font13</font>
+					<textcolor>FF000033</textcolor>
+					<label>$INFO[ListItem.Property(awayteam)]</label>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group" id="3000">
+			<visible>!Control.HasFocus(1002)+!Control.HasFocus(1001)</visible>
+			<left>5</left>
+			<top>75</top>
+			<control type="image">
+				<width>460</width>
+				<height>570</height>
+				<texture border="10">rc-button-focus.png</texture>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>100</width>
+				<height>100</height>
+				<texture>$INFO[Container(2000).ListItem.Art(complogo)]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<left>105</left>
+				<top>5</top>
+				<width>350</width>
+				<height>100</height>
+				<font>font45</font>
+				<textcolor>FF000033</textcolor>
+				<label>$INFO[Container(2000).ListItem.Property(compname)]</label>
+				<aligny>center</aligny>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>120</top>
+				<width>150</width>
+				<height>150</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Container(2000).ListItem.Art(homebadge)]</texture>
+			</control>
+			<control type="label">
+				<left>155</left>
+				<top>120</top>
+				<width>150</width>
+				<height>150</height>
+				<font>font45</font>
+				<textcolor>FF000033</textcolor>
+				<label>$INFO[Container(2000).ListItem.Property(score)]</label>
+				<aligny>center</aligny>
+				<align>center</align>
+			</control>
+			<control type="image">
+				<left>305</left>
+				<top>120</top>
+				<width>150</width>
+				<height>150</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Container(2000).ListItem.Art(awaybadge)]</texture>
+			</control>
+			<control type="textbox">
+				<left>5</left>
+				<top>280</top>
+				<width>200</width>
+				<height>200</height>
+				<font>font10</font>
+				<textcolor>FF000033</textcolor>
+				<label>$INFO[Container(2000).ListItem.Property(ht_scores)]</label>
+				<align>left</align>
+			</control>
+			<control type="textbox">
+				<left>255</left>
+				<top>280</top>
+				<width>200</width>
+				<height>200</height>
+				<font>font10</font>
+				<textcolor>FF000033</textcolor>
+				<label>$INFO[Container(2000).ListItem.Property(at_scores)]</label>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<left>5</left>
+				<top>490</top>
+				<width>450</width>
+				<height>12</height>
+				<font>font10</font>
+				<textcolor>FF000033</textcolor>
+				<label>Referee: $INFO[Container(2000).ListItem.Property(referee)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<left>5</left>
+				<top>507</top>
+				<width>450</width>
+				<height>12</height>
+				<font>font10</font>
+				<textcolor>FF000033</textcolor>
+				<label>Stadium: $INFO[Container(2000).ListItem.Property(stadium)]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+		</control>
+	</controls>
+</window>
+
+
+	<!--color name="spursblue">FF0f204b</color>
+	<color name="spurssilver">FFacadb0</color>
+	<color name="spurshlblue">FF3db7e4</color>
+	<color name="spursdarkblue">FF000033</color>
+	<color name="pyellow">FFffff66</color>
+	<color name="thfcgold">FF85764D</color-->
