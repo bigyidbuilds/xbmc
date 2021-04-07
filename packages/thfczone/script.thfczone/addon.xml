@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.thfczone" name="THFC Zone" version="1.0.0" provider-name="BYB">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.dateutil" version="2.5.3"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.feedparser"/>
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="plugin.video.youtube" version="6.0.0"/>
+		<import addon="script.module.livestreamer" version="1.12.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">THFC Zone For Everything Spurs</summary>
+		<description lang="en">THFC Zone For Everything Spurs</description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website> 
+		<email></email>
+		<source></source>
+		<news>v0.0.1 (11/06/2020)
+			[new] New  version
+			v1.0.0
+			Updated for Kodi 19
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner></banner>
+			<clearlogo>resources/clearlogo.png</clearlogo>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
