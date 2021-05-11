@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="script.module.python3.koding.aio" name="Python3 Koding AIO" version="0.0.1" provider-name="Total Revolution,BYB,Slamoius">
+	<addon id="script.module.python3.koding.aio" name="Python3 Koding AIO" version="0.0.1" provider-name="Total Revolution,BYB">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0"/>
 			<import addon="script.module.resolveurl" />
@@ -19,7 +19,7 @@
 				<screenshot></screenshot>
 			</assets>
 			<summary lang="en">Python3 Koding All In One</summary>
-			<description lang="en">Fork of Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development. This is an alterrnate fork that uses ResolveURL instead of URL Resolver.Updated to Python 3</description>
+			<description lang="en">Fork of Python Koding AIO by 'Total Revolution' Updated to Python 3, contains a bunch of time saving modules that allows for quick and simple development.</description>
 			<disclaimer lang="en"/>
 			<language/>
 			<license>Creative Commons 4.0-NC-ND</license>
