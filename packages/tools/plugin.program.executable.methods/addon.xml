@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.executable.methods" name="Executable Methods" version="0.0.1" provider-name="BYB">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Program addon for testing builtin methods</summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website> 
+		<email></email>
+		<source></source>
+		<news>v0.0.1 (22-05-2021)
+			[new] New  version
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner></banner>
+			<clearlogo>resources/clearlogo.png</clearlogo>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
