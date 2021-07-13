@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	<addon id="script.gui.userguide" name="markdown syntax User Guide" version="0.0.1" provider-name="BYB">
+		<requires>
+			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="script.module.pil"/>
+			<import addon="script.module.requests"/>
+		</requires>
+		<extension point="xbmc.python.script" library="userguide.py"/>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">User Guide script to be called to view a user guide for a Addon</summary>
+			<description lang="en">User Guide script to be called that uses markdown syntax</description>
+			<platform>all</platform>
+			<language>en</language>
+			<license>Apache License</license>
+			<forum></forum>
+			<website></website> 
+			<email></email>
+			<source></source>
+			<news>v0.0.1
+			</news>
+			<assets>
+				<icon>resources/icon.png</icon>
+				<fanart></fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+			</assets>
+		</extension>
+	</addon>
+</addons>
