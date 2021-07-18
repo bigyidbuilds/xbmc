@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="script.gui.userguide" name="markdown syntax User Guide" version="0.0.1" provider-name="BYB">
+	<addon id="script.gui.markdown.syntax.userguide" name="markdown syntax User Guide" version="1.0.0" provider-name="BYB">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0"/>
 			<import addon="script.module.pil"/>
@@ -14,9 +14,9 @@
 			<language>en</language>
 			<license>Apache License</license>
 			<forum></forum>
-			<website></website> 
+			<website>https://github.com/bigyidbuilds/script.gui.markdown.syntax.userguide/blob/main/README.md</website> 
 			<email></email>
-			<source></source>
+			<source>https://github.com/bigyidbuilds/script.gui.markdown.syntax.userguide</source>
 			<news>v0.0.1
 			</news>
 			<assets>
@@ -27,5 +27,5 @@
 				<screenshot></screenshot>
 			</assets>
 		</extension>
-	</addon>
+	</addon>	
 </addons>
