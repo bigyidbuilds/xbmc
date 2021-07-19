@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	<addon id="repository.byb.projects" name="BYB Projects" version="1.0.1" provider-name="BYB">
+		<extension point="xbmc.addon.repository" name="BYB Projects Repository">
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/thfczone/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/thfczone/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/thfczone/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/koding/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/koding/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/koding/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/flixgui/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/flixgui/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/flixgui/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/gui/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/gui/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/gui/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/templates/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/templates/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/templates/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repository/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repository/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repository/</datadir>
+			</dir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>All Projects</summary>
+			<description></description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
+</addons>
