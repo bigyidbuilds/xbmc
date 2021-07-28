@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="script.thfczone" name="THFC Zone" version="1.0.0" provider-name="BYB">
+	<addon id="script.thfczone" name="THFC Zone" version="1.0.1" provider-name="BYB">
 		<requires>
 			<import addon="xbmc.python" version="3.0.0"/>
 			<import addon="script.module.dateutil" version="2.5.3"/>
@@ -24,10 +24,13 @@
 			<website></website> 
 			<email></email>
 			<source></source>
-			<news>v0.0.1 (11/06/2020)
-				[new] New  version
+			<news>
+				v1.0.1
+				Added new season 2021-2022
 				v1.0.0
 				Updated for Kodi 19
+				v0.0.1 (11/06/2020)
+				[new] New  version
 			</news>
 			<assets>
 				<icon>resources/icon.png</icon>
