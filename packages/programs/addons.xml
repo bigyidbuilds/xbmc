@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons>
+ 	<addon id="plugin.program.addonadministrator" name="Addon Administrator" version="0.0.1" provider-name="BYB">
+ 	 	<requires>
+ 	 	 	<import addon="xbmc.python" version="3.0.0" />
+ 	 	</requires>
+ 	 	<extension point="xbmc.python.pluginsource" library="addon.py">
+ 	 	 	<provides>executable</provides>
+ 	 	</extension>
+ 	 	<extension point="xbmc.python.module" library="resources/lib/" />
+ 	 	<extension point="xbmc.service" library="resources/lib/scripts/autorun.py" />
+ 	 	<extension point="xbmc.addon.metadata">
+ 	 	 	<summary lang="en_GB">Addon Administrator</summary>
+ 	 	 	<description lang="en_GB">Program for backing up, restoring, exporting,importing and comparing of addon settings</description>
+ 	 	 	<disclaimer lang="en_GB" />
+ 	 	 	<language>en</language>
+ 	 	 	<platform>all</platform>
+ 	 	 	<license>GPL-2.0-or-later</license>
+ 	 	 	<forum />
+ 	 	 	<website />
+ 	 	 	<email />
+ 	 	 	<source />
+ 	 	 	<news>
+			0.0.1 initial build
+		</news>
+ 	 	 	<assets>
+ 	 	 	 	<icon>resources/icon.png</icon>
+ 	 	 	 	<fanart>resources/fanart.jpg</fanart>
+ 	 	 	 	<banner />
+ 	 	 	 	<clearlogo>resources/clearlogo.png</clearlogo>
+ 	 	 	 	<screenshot />
+ 	 	 	</assets>
+ 	 	</extension>
+ 	</addon>
+</addons>
