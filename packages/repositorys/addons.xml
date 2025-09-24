@@ -1,33 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
- 	<addon id="repository.byb.projects" name="BYB Projects" version="2.0" provider-name="BYB">
- 	 	<extension point="xbmc.addon.repository" name="BYB Projects Repository">
- 	 	 	<dir>
- 	 	 	 	<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/addons.xml</info>
- 	 	 	 	<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/addons.xml.md5</checksum>
- 	 	 	 	<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/</datadir>
- 	 	 	</dir>
- 	 	 	<dir>
- 	 	 	 	<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repositorys/addons.xml</info>
- 	 	 	 	<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repositorys/addons.xml.md5</checksum>
- 	 	 	 	<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repositorys/</datadir>
- 	 	 	</dir>
- 	 	 	<dir>
- 	 	 	 	<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/programs/addons.xml</info>
- 	 	 	 	<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/programs/addons.xml.md5</checksum>
- 	 	 	 	<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/programs/</datadir>
- 	 	 	</dir>
- 	 	 	<dir>
- 	 	 	 	<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/scripts/addons.xml</info>
- 	 	 	 	<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/scripts/addons.xml.md5</checksum>
- 	 	 	 	<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/scripts/</datadir>
- 	 	 	</dir>
- 	 	</extension>
- 	 	<extension point="xbmc.addon.metadata">
- 	 	 	<summary>All Projects</summary>
- 	 	 	<description />
- 	 	 	<disclaimer />
- 	 	 	<platform>all</platform>
- 	 	</extension>
- 	</addon>
+	<addon id="repository.byb.projects" name="BYB Projects" version="2.1" provider-name="BYB">
+		<extension point="xbmc.addon.repository" name="BYB Projects Repository">
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/tools/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repositorys/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repositorys/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/repositorys/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/programs/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/programs/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/programs/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/scripts/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/scripts/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/scripts/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/video/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/video/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/bigyidbuilds/xbmc/main/packages/video/</datadir>
+			</dir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>All Projects</summary>
+			<description></description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
 </addons>

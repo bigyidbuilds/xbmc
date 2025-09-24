@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	<addon id="plugin.video.tmdbtrailers" name="TMDB Trailers" version="0.0.1" provider-name="BYB">
+		<requires>
+			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="script.module.requests"/>
+			<import addon="plugin.video.youtube" version="7.2.0"/>
+			<import addon="plugin.video.vimeo"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="addon.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.python.module" library="resources/lib/tmdbtrailers"/>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Plugin for viewing Clips,Teasers,Featurettes,Trailer and Behind the Scenes videos for movies and tv shows</summary>
+			<description lang="en"></description>
+			<platform>all</platform>
+			<language>en</language>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+			<forum></forum>
+			<website>https://github.com/bigyidbuilds/plugin.video.tmdbtrailers/blob/main/README.md</website> 
+			<email></email>
+			<source>https://github.com/bigyidbuilds/plugin.video.tmdbtrailers</source>
+			<news>v0.0.1
+			</news>
+			<assets>
+				<icon>resources/media/icon.png</icon>
+				<fanart>resources/media/fanart.jpg</fanart>
+				<banner>resources/media/banner.jpg</banner>
+				<clearlogo>resources/media/clearlogo.png</clearlogo>
+				<screenshot>resources/media/</screenshot>
+				<screenshot>resources/media/</screenshot>
+				<screenshot>resources/media</screenshot>
+				<screenshot>resources/media</screenshot>
+			</assets>
+		</extension>
+	</addon>
+</addons>
