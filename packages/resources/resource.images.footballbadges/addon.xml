@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="resource.images.footballbadges" name="Football badges" version="0.0.1" provider-name="BigYid">
+	<extension point="kodi.resource.images" compile="true" type="icon" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Football team badges</summary>
+		<description lang="en">Football team badges</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE 3.0</license>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
