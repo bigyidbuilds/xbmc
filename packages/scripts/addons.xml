@@ -43,4 +43,33 @@
 			</assets>
 		</extension>
 	</addon>
+	<addon id="script.module.wallpaper.scraper" name="Wallpaper scrapers" version="0.0.1" provider-name="BigYid">
+		<requires>
+			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="script.module.requests" />
+			<import addon="script.module.beautifulsoup4" />
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en_GB">Wallpaper scrapers</summary>
+			<description lang="en_GB">Scraper to scrape wallpapers from various webpages using a search query</description>
+			<disclaimer lang="en_GB"></disclaimer>
+			<platform>all</platform>
+			<license>GPL-3.0-or-later</license>
+			<forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum> <!-- may be omitted -->
+			<website></website> <!-- URL of the website that supplies the content, or the website for your plugin; may be omitted. -->
+			<source>http://github.com/</source>
+			<news>v0.0.1 (10/06/2026)
+				[new] initial release
+				[fix] 
+			</news>
+			<assets>
+				<icon>resources/icon.png</icon>
+				<fanart></fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+			</assets>
+		</extension>
+	</addon>
 </addons>
