@@ -84,8 +84,8 @@
 			<provides>executable</provides>
 		</extension>
 		<extension point="xbmc.python.pluginsource" library="plugin.py">
-	        <provides>video image</provides>
-	    </extension>
+			<provides>video image</provides>
+		</extension>
 		<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB"></summary>
 		<description lang="en_GB"></description>
