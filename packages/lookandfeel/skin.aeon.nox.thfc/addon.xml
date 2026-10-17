@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aeon.nox.thfc" version="0.0.1" name="Aeon Nox THFC" provider-name="BigYid">
-	<requires>.
+<addon id="skin.aeon.nox.5" version="7.0.2" name="Aeon Nox" provider-name="BigNoid">
+	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="script.grab.fanart" version="0.12.8"/>
 		<import addon="script.skinshortcuts" version="0.4.5"/>
 		<import addon="service.library.data.provider" version="0.0.7"/>
 		<import addon="resource.images.studios.white" version="0.0.1"/>
 		<import addon="resource.images.recordlabels.white" version="0.0.1"/>
-		<import addon="script.aeon.nox.thfc" version="0.0.1"/>
-		<import addon="resource.images.footballbadges" version="0.0.1"/>
 	</requires>
-	<extension point="xbmc.gui.skin" debugging="true" effectslowdown="0.75">
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 		<res width="2560" height="1080" aspect="21:9" default="false" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de">Aeon Nox 5: Redux</summary>
 		<summary lang="el">Aeon Nox 5: Redux</summary>
-		<summary lang="en_GB">Aeon Nox 5: THFC</summary>
+		<summary lang="en_GB">Aeon Nox 5: Redux</summary>
 		<summary lang="en_AU">Aeon Nox 5: Redux</summary>
 		<summary lang="en_NZ">Aeon Nox 5: Redux</summary>
 		<summary lang="en_US">Aeon Nox 5: Redux</summary>
@@ -47,7 +45,7 @@
 		<summary lang="zh">Aeon Nox 5: Redux</summary>
 		<description lang="de">Redux: Komplett neu designed für ein modernes Aussehen und das klassische Aeon-Feeling beizubehalten.</description>
 		<description lang="el">Redux: Πλήρως επανασχεδιασμένο για να προσφέρει μια μοντέρνα αισθητική, διατηρώντας ταυτόχρονα την κλασική ομορφιά του Aeon.</description>
-		<description lang="en_GB">THFC: Redesigned to give a Tottenham Hotspur look, while retaining the classic Aeon feel.</description>
+		<description lang="en_GB">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="en_AU">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="en_NZ">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="en_US">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
@@ -76,11 +74,11 @@
 		<disclaimer lang="en_GB">Mouse control is supported, althoug not recommended. It may not work correctly in all cases.</disclaimer>
 		<platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
-		<forum></forum>
-		<website>https://github.com/</website>
-		<email></email>
-		<source>https://github.com/</source>
-		<news></news>
+		<forum>http://forum.kodi.tv/showthread.php?tid=183504</forum>
+		<website>https://github.com/BigNoid/Aeon-Nox</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/Aeon-Nox</source>
+		<news>Updated for Kodi v18 "Leia"[CR]For a full list of changes visit https://github.com/BigNoid/Aeon-Nox/commits/master</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
